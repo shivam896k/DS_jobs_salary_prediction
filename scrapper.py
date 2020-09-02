@@ -15,7 +15,7 @@ def get_jobs(keyword, num_jobs, verbose):
     #options.add_argument('headless')
     
     #Change the path to where chromedriver is in your home folder.
-    driver = webdriver.Chrome(executable_path="/home/shivam/Projects/ipython/DS_jobs_salary_prediction/chromedriver", options=options)
+    driver = webdriver.Chrome(executable_path="chromedriver", options=options)
     driver.set_window_size(1120, 1000)
 
     url = 'https://www.glassdoor.com/Job/jobs.htm?sc.keyword="' + keyword + '"&locT=C&locId=1147401&locKeyword=San%20Francisco,%20CA&jobType=all&fromAge=-1&minSalary=0&includeNoSalaryJobs=true&radius=100&cityId=-1&minRating=0.0&industryId=-1&sgocId=-1&seniorityType=all&companyId=-1&employerSizes=0&applicationType=0&remoteWorkType=0'
